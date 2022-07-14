@@ -11,7 +11,23 @@ You could've watched me code this live at on [twitch](https://www.twitch.tv/whim
 ---
 ## Usage
 
-Set the input file (this is stored in the **INPUTFILE** variable), this should be a .json file. An example json file is provided. Set the "StreamCount" to the number of streams you will be including. Add that many elements to the "Streams" array. Fill in the "title", "year", "month", "day", "hour", and "minute" information for each stream. Place your completed json file in the same directory as the streamTimes.py program. Set the minimum padding between the stream title and the time (this is stored in the **MINIMUMPADDINGLENGTH** variable). Set the padding character, this is the character that will fill in the blank space between your title and the stream time (this is stored in the **PADDINGCHAR** variable). Set the outpute file which is where your message will be printed to (this is stored in the **OUTPUTFILE** variable). Run streamTimes.py with the python interperter. You can do this by typing **python streamTimes.py** or **python3 streamTimes.py** (This program was written for python 3 and may not work in python 2). You completed discord message will be printed to the command line as well as your file. You may then copy & paste the output file or the command line output and past it into discord.
+1. Set the input file (this is stored in the **INPUTFILE** variable), this should be a .json file. An example json file is provided. 
+
+2. Set the "StreamCount" to the number of streams you will be including. Add that many elements to the "Streams" array. 
+
+3. Fill in the "title", "year", "month", "day", "hour", and "minute" information for each stream. 
+
+4. Place your completed json file in the same directory as the streamTimes.py program. 
+
+5. Set the minimum padding between the stream title and the time (this is stored in the **MINIMUMPADDINGLENGTH** variable). 
+
+6. Set the padding character, this is the character that will fill in the blank space between your title and the stream time (this is stored in the **PADDINGCHAR** variable). 
+
+7. Set the outpute file which is where your message will be printed to (this is stored in the **OUTPUTFILE** variable). 
+
+8. Run streamTimes.py with the python interperter. You can do this by typing **python streamTimes.py** or **python3 streamTimes.py** (This program was written for python 3 and may not work in python 2). 
+
+9. You completed discord message will be printed to the command line as well as your file. You may then copy & paste the output file or the command line output and past it into discord.
 
 ---
 ## Support
