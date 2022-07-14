@@ -6,6 +6,7 @@ import json
 INPUTFILE = "schedule.json"
 MINPADDINGLENGTH = 5
 PADDINGCHAR = '-'
+OUTPUTFILE = "message.txt"
 
 
 streamTime = datetime.datetime(2022,7,14,hour=1,minute=30)
@@ -17,10 +18,10 @@ def convertToEpoch(streamTime):
 def loadJson(INPUTFILE):
     input = io.open(INPUTFILE,"r")
     data = json.loads(input.read())
-
+    input.close()
     return data
 
-def writeSchedule(data,MINPADDINGLENGTH,PADDINGCHAR):
+def writeSchedule(data,MINPADDINGLENGTH,PADDINGCHAR,OUTPUTFILE):
     streamCount = data["StreamCount"]
 
     times = []
@@ -51,10 +52,11 @@ def writeSchedule(data,MINPADDINGLENGTH,PADDINGCHAR):
 
         if i != streamCount-1:
             schedule += "\n"
-
+    output = open(OUTPUTFILE,"w")
+    output.write(schedule)
     print(schedule)
 
 
 data = loadJson(INPUTFILE)
 
-writeSchedule(data,MINPADDINGLENGTH,PADDINGCHAR)
+writeSchedule(data,MINPADDINGLENGTH,PADDINGCHAR,OUTPUTFILE)
